@@ -113,6 +113,14 @@ amely minden `main` branchre történő push esetén:
 A workflow fájl helye: `.github/workflows/ci-docker.yml`.
 ---
 
+## CI Pipeline
+
+A projekt GitHub Actions pipeline-t használ, amely minden push esetén:
+- buildeli a Docker image-et,
+- majd feltölti a GitHub Container Registry-be.
+
+A workflow fájl: `.github/workflows/ci-docker.yml`.
+
 ## Szerző
 
 kihd0w Kocsis Attila – 2025
