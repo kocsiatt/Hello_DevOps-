@@ -99,9 +99,20 @@ Hello_DevOps-/
  ├── Dockerfile
  └── .gitignore
 ```
+## CI - Docker image build és push (3.2 opció)
 
+A repóhoz GitHub Actions alapú CI pipeline tartozik,
+amely minden `main` branchre történő push esetén:
+
+1. leklónozza a repót,
+2. felépíti a Docker image-et a `Dockerfile` alapján,
+3. feltölti az image-et a GitHub Container Registry-be:
+
+   `ghcr.io/kocsiatt/hello-devops:latest`
+
+A workflow fájl helye: `.github/workflows/ci-docker.yml`.
 ---
 
 ## Szerző
 
-kkihd0w Kocsis Attila – 2025
+kihd0w Kocsis Attila – 2025
